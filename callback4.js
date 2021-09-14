@@ -11,7 +11,7 @@ const getInfo=(boards, list, card)=>{
           getBoardInfo(board.id, boardData, (error, data) => {
             if (error) {
               console.log(error);
-            } else {
+            } else { 
               console.log(data);
               let tempData=[];
               tempData.push(data);

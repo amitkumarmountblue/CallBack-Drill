@@ -7,7 +7,7 @@ const callback = (error, data) => {
   } else {
     console.log(data);
   }
-};
+}
 
 getListBelongToBoard("mcu453ed", list, callback);
 getListBelongToBoard("abc122dc", list, callback);

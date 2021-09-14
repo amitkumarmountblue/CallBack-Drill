@@ -7,7 +7,7 @@ const callback=(error,data)=>{
   } else {
     console.log(data);
   }
-}
+} 
 
 getBoardInfo("mcu453ed", boards, callback);
 getBoardInfo("abc122dc", boards, callback);

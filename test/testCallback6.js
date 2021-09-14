@@ -5,3 +5,5 @@ const getInfo= require("../callback6.js");
 
 getInfo(board, list, card);
 
+
+

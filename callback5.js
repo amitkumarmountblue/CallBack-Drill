@@ -39,7 +39,6 @@ const getInfo=(boards, list, card)=>{
                               });
                             }
                           });
-
                     })
                   }
                 })

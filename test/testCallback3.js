@@ -7,7 +7,7 @@ const callback = (error, data) => {
   } else {
     console.log(data);
   }
-};
+}
 
 getCardsUsingListID("qwsa221", cards, callback);
 getCardsUsingListID("azxs123", cards, callback);
