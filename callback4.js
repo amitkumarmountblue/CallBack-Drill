@@ -6,9 +6,7 @@ const getInfo=(boards, list, card)=>{
     setTimeout(() => {
       boards.forEach((board) => {
         if (board.name === "Thanos") {
-          let boardData = [];
-          boardData.push(board);
-          getBoardInfo(board.id, boardData, (error, data) => {
+          getBoardInfo(board.id, boards, (error, data) => {
             if (error) {
               console.log(error);
             } else { 
