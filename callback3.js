@@ -1,5 +1,4 @@
-module.exports = {
-  getCardsUsingListID: function (listID, cards, callback) {
+const getCardsUsingListID=(listID, cards, callback)=>{
     let data = cards[listID];
     if (data) {
       callback(null, data);
@@ -7,5 +6,6 @@ module.exports = {
       let err = new Error("Invalid ID");
       callback(err);
     }
-  },
-};
+  };
+
+module.exports=getCardsUsingListID;

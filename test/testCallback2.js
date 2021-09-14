@@ -1,7 +1,5 @@
-const path = require("path");
-const list = require(path.join(__dirname, "../Data/lists.json"));
-
-const { getListBelongToBoard } = require("../callback2.js");
+const list=require("../Data/lists.json");
+const getListBelongToBoard = require("../callback2.js");
 
 const callback = (error, data) => {
   if (error) {

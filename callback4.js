@@ -1,9 +1,8 @@
-const { getBoardInfo } = require("./callback1.js");
-const { getListBelongToBoard } = require("./callback2.js");
-const { getCardsUsingListID } = require("./callback3.js");
+const getBoardInfo = require("./callback1.js");
+const getListBelongToBoard = require("./callback2.js");
+const getCardsUsingListID = require("./callback3.js");
 
-module.exports = {
-  getInfo: function (boards, list, card) {
+const getInfo=(boards, list, card)=>{
     setTimeout(() => {
       boards.forEach((board) => {
         if (board.name === "Thanos") {
@@ -43,5 +42,6 @@ module.exports = {
         }
       });
     });
-  },
-};
+  };
+
+module.exports= getInfo;

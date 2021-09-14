@@ -1,8 +1,5 @@
-const path = require("path");
-const cards = require(path.join(__dirname, "../Data/cards.json"));
-
-const { getCardsUsingListID } = require("../callback3.js");
-
+const cards = require("../Data/cards.json");
+const getCardsUsingListID = require("../callback3.js");
 
 const callback = (error, data) => {
   if (error) {

@@ -1,5 +1,4 @@
-module.exports = {
-  getBoardInfo: function (boardID, boards, callback) {
+const getBoardInfo=(boardID, boards, callback)=>{
     setTimeout(() => {
       let data = boards.find((boarddetails) => boarddetails.id === boardID);
       if (data) {
@@ -9,5 +8,6 @@ module.exports = {
         callback(err);
       }
     }, 2 * 1000);
-  },
-};
+  };
+
+  module.exports = getBoardInfo;

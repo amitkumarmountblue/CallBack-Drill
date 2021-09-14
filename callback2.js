@@ -1,5 +1,4 @@
-module.exports = {
-  getListBelongToBoard: function (boardId, list, callback) {
+const getListBelongToBoard=(boardId, list, callback)=>{
     setTimeout(() => {
       let data = list[boardId];
       if (data) {
@@ -9,5 +8,6 @@ module.exports = {
         callback(err);
       }
     }, 2 * 1000);
-  },
-};
+  };
+
+  module.exports = getListBelongToBoard;

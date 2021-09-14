@@ -1,6 +1,5 @@
-const path = require("path");
-const boards = require(path.join(__dirname, "../Data/boards.json"));
-const { getBoardInfo } = require("../callback1.js");
+const boards=require("../Data/boards.json");
+const getBoardInfo = require("../callback1.js");
 
 const callback=(error,data)=>{
   if (error) {
