@@ -3,8 +3,7 @@ const getCardsUsingListID=(listID, cards, callback)=>{
     if (data) {
       callback(null, data);
     } else {
-      let err = new Error("Invalid ID");
-      callback(err);
+      callback("Invalid ID");
     }
   };
 

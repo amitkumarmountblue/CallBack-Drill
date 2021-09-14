@@ -4,8 +4,7 @@ const getListBelongToBoard=(boardId, list, callback)=>{
       if (data) {
         callback(null, data);
       } else {
-        let err = new Error("Invalid ID");
-        callback(err);
+        callback("Invalid ID");
       }
     }, 2 * 1000);
   };
