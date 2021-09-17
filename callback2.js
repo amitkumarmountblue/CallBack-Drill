@@ -1,12 +1,14 @@
-const getListBelongToBoard=(boardId, list, callback)=>{
+const getListBelongToBoard=(boardId, list)=>{
+  return new Promise((resolve,reject)=>{
     setTimeout(() => {
       let data = list[boardId];
       if (data) {
-        callback(null, data);
+        resolve(data);
       } else {
-        callback("Invalid ID");
+        reject("Invalid ID");
       }
-    }, 2 * 1000);
+    }, 2 * 1000)
+  })
   };
 
   module.exports = getListBelongToBoard;

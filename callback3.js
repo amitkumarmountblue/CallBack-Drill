@@ -1,10 +1,12 @@
-const getCardsUsingListID=(listID, cards, callback)=>{
+const getCardsUsingListID=(listID, cards)=>{
+   return new Promise((resolve,reject)=>{
     let data = cards[listID];
     if (data) {
-      callback(null, data);
+      resolve(data);
     } else {
-      callback("Invalid ID");
+      reject("Invalid ID");
     }
+   })
   };
 
 module.exports=getCardsUsingListID;

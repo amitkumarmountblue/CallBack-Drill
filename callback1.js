@@ -1,12 +1,14 @@
-const getBoardInfo=(boardID, boards, callback)=>{
+const getBoardInfo=(boardID, boards)=>{
+   return new Promise((resolve,reject)=>{
     setTimeout(() => {
       let data = boards.find((boarddetails) => boarddetails.id === boardID);
       if (data) {
-        callback(null, data);
+        resolve(data);
       } else {
-        callback("Invalid ID");
+        reject("Invalid Id ");
       }
     }, 2 * 1000);
+   })
   };
 
   module.exports = getBoardInfo;
