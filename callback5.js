@@ -10,7 +10,7 @@ const getInfo = (boards, list, card) => {
           if (error) {
             console.log(error);
           } else {
-            console.log(data);
+            console.log(data);~
             getListBelongToBoard(data.id, list, (err, data) => {
               if (err) {
                 console.log(err);
